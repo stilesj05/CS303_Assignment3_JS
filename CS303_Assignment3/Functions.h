@@ -19,21 +19,21 @@ void insertion_sort(list<int>& lst) {
     if (lst.empty()) return;
 
     auto it = lst.begin();
-    ++it; // Start from the second element
+    ++it; //start from the second element
 
     while (it != lst.end()) {
         int key = *it;
         auto j = it;
         --j;
 
-        // Find the correct spot for key
+        //find the correct spot for key
         while (j != lst.begin() && *j > key) {
             auto prev = j;
             --prev;
             --j;
         }
 
-        // Adjust for the first element
+        //adjust for the first element
         if (*j > key && j == lst.begin()) {
             lst.insert(j, key);
             it = lst.erase(it);
