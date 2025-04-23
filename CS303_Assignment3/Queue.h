@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// Item_Type wrapper
+//Item_Type wrapper
 template <typename T>
 struct Item_Type {
     T data;
@@ -14,7 +14,7 @@ struct Item_Type {
     }
 };
 
-// Node definition
+//node definition
 template <typename T>
 struct Node {
     Item_Type<T> nodeData;
@@ -25,7 +25,7 @@ struct Node {
     }
 };
 
-// Queue class
+//queue class
 template <typename T>
 class Queue {
 private:
